@@ -24,6 +24,3 @@ Route::get('/posts/update/{post}', [PostController\Update::class, 'index'])->nam
 Route::put('/posts/update/{post}', [PostController\Update::class, 'update'])->name('posts.update');
 
 Route::delete('/posts/delete/{post}', [PostController\Delete::class, 'destroy'])->name('posts.destroy');
-
-Route::post('/upload', [PostController\Upload::class, 'upload'])->name('upload');
-
